@@ -10,9 +10,25 @@ namespace Udemy
     {
         public static void Main()
         {
-            Console.Write("Introduce tu nombre: ");
-            string name = Console.ReadLine();
-            Console.WriteLine(name);
+            Console.WriteLine("El valor en radianes es {0}.", Conversion());
+        }
+
+        static double Conversion()
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Introduzca un valor (en grados) a convertir: ");
+                    return (Convert.ToDouble(Console.ReadLine())) * Math.PI / 180;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("\nADVERTENCIA - Excepción detectada: \n{0} \nEl formato correcto es 00.0\nPresiona Enter y vuelve a intentarlo.", e.Message);
+                    Console.ReadLine();
+                }
+            }
+            
         }
     }
 }

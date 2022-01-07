@@ -10,20 +10,28 @@ namespace Udemy
     {
         public static void Main()
         {
-            Console.Write("Introduzca un número: ");
-            string n = Console.ReadLine();
-            int divisores = 0;
-
-            for (int i = 1; i <= Convert.ToInt32(n); i++)
+            while (true)
             {
-                if (Convert.ToInt32(n) % i == 0)
+                try
                 {
-                    divisores++;
+                    Console.Write("Introduzca un número: ");
+                    int n = Convert.ToInt32(Console.ReadLine());
+
+                    if (n % 2 == 0)
+                    {
+                        Console.WriteLine("El número {0} es par.", n);
+                    }
+                    else
+                    {
+                        Console.WriteLine("El número {0} es impar.", n);
+                    }
+                    break;
                 }
-            }
-            if (divisores == 2)
-            {
-                Console.WriteLine("{0} es primo", n);
+                catch (Exception e)
+                {
+                    Console.WriteLine("\nADVERTENCIA - Excepción detectada: \n{0} \nEl formato correcto es 00.0\nPresiona Enter y vuelve a intentarlo.", e.Message);
+                    Console.ReadLine();
+                }
             }
         }
     }

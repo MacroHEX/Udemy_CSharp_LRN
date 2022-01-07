@@ -10,9 +10,25 @@ namespace Udemy
     {
         public static void Main()
         {
-            Console.Write("Introduce tu nombre: ");
-            string name = Console.ReadLine();
-            Console.WriteLine(name);
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Introduzca un número: ");
+                    int n = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Introduzca una potencia: ");
+                    int exp = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(Math.Pow(n, exp));
+                    break;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("\nADVERTENCIA - Excepción detectada: \n{0} \nEl formato correcto es 00.0\nPresiona Enter y vuelve a intentarlo.", e.Message);
+                    Console.ReadLine();
+                }
+                
+            }
+            
         }
     }
 }
