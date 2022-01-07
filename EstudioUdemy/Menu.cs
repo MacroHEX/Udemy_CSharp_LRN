@@ -106,6 +106,7 @@ namespace Udemy
                     Console.WriteLine("║  1. Calcular promedio de calificaciones por curso. ║");
                     Console.WriteLine("║  2. Calcular la menor calificación por curso.      ║");
                     Console.WriteLine("║  3. Calcular la mayor calificación por curso.      ║");
+                    Console.WriteLine("║  4. Ejecutar programa completo.                    ║");
                     Console.WriteLine("║                                                    ║");
                     Console.WriteLine("║  0. Atrás                                          ║");
                     Console.WriteLine("╚════════════════════════════════════════════════════╝");
@@ -121,8 +122,10 @@ namespace Udemy
                     Console.WriteLine("║  0. Atrás                                   ║");
                     Console.WriteLine("╚═════════════════════════════════════════════╝");
                     break;
+                default:
+                    Console.WriteLine("Opción invalida, ingrese 0 para regresar.");
+                    break;
             }
-            
         }
         public string Option()
         {
