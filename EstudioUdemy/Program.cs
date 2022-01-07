@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Menu = Udemy.Menu;
+using static Udemy.HWList;
 
 namespace Udemy
 {
@@ -13,6 +14,7 @@ namespace Udemy
         {
             // Inicializo una referencia a la clase Menu
             Menu menu = new Menu();
+            HWList h = new HWList();
 
             // Bandera de ejecución
             bool run = true;
@@ -36,6 +38,7 @@ namespace Udemy
                         if (ex != "0")
                         {
                             Console.Clear();
+                            h.GetHW(hw, ex);
                         }
                         else
                         { hw_run = false;}
