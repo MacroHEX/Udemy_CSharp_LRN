@@ -11,14 +11,39 @@ namespace Udemy
     {
         static void Main(string[] args)
         {
+            // Inicializo una referencia a la clase Menu
             Menu menu = new Menu();
 
-            bool ejecutando = true;
+            // Bandera de ejecución
+            bool run = true;
+            bool hw_run = true;
 
-            while (ejecutando)
+            // Seleccion de opciones
+            string hw, ex;
+
+            while (run)
             {
-                menu.PrintM();
-                Console.ReadKey();
+                menu.PrintM("0");
+                hw = menu.Option();
+
+                if (hw != "0")
+                {
+                    while (hw_run)
+                    {
+                        menu.PrintM(hw);
+                        ex = menu.Option();
+
+                        if (ex != "0")
+                        {
+                            Console.Clear();
+                        }
+                        else
+                        { hw_run = false;}
+                    }
+                    hw_run = true;
+                }
+                else
+                { run = false; }
             }
         }
     }
