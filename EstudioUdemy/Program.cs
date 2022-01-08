@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Menu = Udemy.Menu;
-using static Udemy.HWList;
+﻿// No es necesario referenciar por estar en el mismo namespace
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//using Menu = Udemy.Menu;
+//using static Udemy.HWList;
 
 namespace Udemy
 {
