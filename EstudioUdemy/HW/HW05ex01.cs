@@ -25,7 +25,7 @@ namespace Udemy
                 catch (Exception e)
                 {
                     Console.WriteLine("\nADVERTENCIA - Excepción detectada: \n{0} \nEl formato correcto es 00.0\nPresiona Enter y vuelve a intentarlo.", e.Message);
-                    Console.ReadLine();
+                    Console.ReadKey();
                 }
             }
             

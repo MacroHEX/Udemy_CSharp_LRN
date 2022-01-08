@@ -12,7 +12,7 @@ namespace Udemy
         {
             Console.Write("Introduce tu nombre: ");
             string name = Console.ReadLine();
-            Console.WriteLine("Hola ", name);
+            Console.WriteLine("Hola " + name);
         }
     }
 }
