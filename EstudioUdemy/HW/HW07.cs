@@ -118,7 +118,7 @@ namespace Udemy
         }
         public double Retiro(double montoPa)
         {
-            if (saldo > 0)
+            if ((saldo - montoPa) > 0)
             {
                 saldo -= montoPa;
                 Console.WriteLine("El retiro fue procesado con éxito.");
@@ -135,12 +135,12 @@ namespace Udemy
         }
         public void ConsultaSaldo()
         {
-            Console.WriteLine(saldo);
+            Console.WriteLine("{0} {1} su saldo actual es {2}", nombre, apellidos, saldo);
             Console.ReadKey();
         }
         public override string ToString()
         {
-            return nombre + " " + apellidos + " " + direccion + " " + rfc + " " + saldo;
+            return "Nombre: " + nombre + "\nApellidos: " + apellidos + "\nDirección: " + direccion + "\nRFC: " + rfc + "\nSaldo: " + saldo;
         }
     }
 }
