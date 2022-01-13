@@ -42,7 +42,7 @@ namespace Udemy
                             h.GetHW(hw, ex);
                         }
                         else
-                        { hw_run = false;}
+                        { hw_run = false; }
                     }
                     hw_run = true;
                 }

@@ -16,6 +16,7 @@ using H5e1 = Udemy.HW05ex01;
 using H5e2 = Udemy.HW05ex02;
 using H6 = Udemy.HW06;
 using H7 = Udemy.HW07;
+using H8 = Udemy.HW08; 
 
 namespace Udemy
 {
@@ -74,6 +75,9 @@ namespace Udemy
                     break;
                 case "7-1":
                     H7.Main();
+                    break;
+                case "8-1":
+                    H8.Main();
                     break;
             }
             Console.WriteLine("\nPresiona Enter para continuar...");

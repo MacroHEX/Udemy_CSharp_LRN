@@ -12,13 +12,7 @@ namespace Udemy
         {
             HWList hWList = new HWList();
             Console.Clear();
-            Dictionary<string, HWList> Diccionariol = new Dictionary<string, HWList>()
-            {
-                {"1", hWList},
-            };
-            hWList[0].Main(HW01ex01);
+
         }
     }
 }
-
-Console.

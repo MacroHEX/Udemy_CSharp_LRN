@@ -11,7 +11,7 @@ namespace Udemy
         public void PrintM(string n)
         {
             Console.Clear();
-
+            
             switch (n)
             {
                 case "0":
@@ -29,6 +29,7 @@ namespace Udemy
                     Console.WriteLine("║  5. Los Métodos (Calculos)             ║");
                     Console.WriteLine("║  6. Las Matrices (Matriz de Matrices)  ║");
                     Console.WriteLine("║  7. Las Clases (Instancias)            ║");
+                    Console.WriteLine("║  8. Las Colecciones Genéricas          ║");
                     Console.WriteLine("║                                        ║");
                     Console.WriteLine("║                                        ║");
                     Console.WriteLine("║  0. Salir                              ║");
@@ -118,6 +119,17 @@ namespace Udemy
                     Console.WriteLine("╠═════════════════════════════════════════════╣");
                     Console.WriteLine("║                                             ║");
                     Console.WriteLine("║  1. Crea una simulación de cuenta bancaria. ║");
+                    Console.WriteLine("║                                             ║");
+                    Console.WriteLine("║  0. Atrás                                   ║");
+                    Console.WriteLine("╚═════════════════════════════════════════════╝");
+                    break;
+                case "8":
+                    Console.ForegroundColor = ConsoleColor.DarkCyan;
+                    Console.WriteLine("╔═════════════════════════════════════════════╗");
+                    Console.WriteLine("║          Las Colecciones Genéricas          ║");
+                    Console.WriteLine("╠═════════════════════════════════════════════╣");
+                    Console.WriteLine("║                                             ║");
+                    Console.WriteLine("║  1. Lista de clientes bancarios.            ║");
                     Console.WriteLine("║                                             ║");
                     Console.WriteLine("║  0. Atrás                                   ║");
                     Console.WriteLine("╚═════════════════════════════════════════════╝");
